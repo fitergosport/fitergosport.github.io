@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://virtualcondor.github.io/fitergosport-web/sitemap.xml

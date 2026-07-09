@@ -234,6 +234,48 @@ button{ font-family:inherit; }
 .note{ text-align:center; color:var(--color-text-light); margin-top:12px; }
 .note a{ color:var(--color-secondary); font-weight:600; }
 
+/* ============ Proceso / Modalidades ============ */
+.process-steps{
+  display:grid; grid-template-columns:repeat(4, 1fr); gap:24px;
+  list-style:none; counter-reset:step; margin-bottom:56px;
+}
+.step-card{
+  background:var(--color-bg); border-radius:var(--radius); padding:28px 22px;
+  position:relative;
+}
+.step-number{
+  display:flex; align-items:center; justify-content:center;
+  width:38px; height:38px; border-radius:50%;
+  background:var(--color-secondary); color:#fff;
+  font-family:var(--font-heading); font-weight:700; font-size:1rem;
+  margin-bottom:16px;
+}
+.step-card h3{ font-size:1.05rem; }
+.step-card p{ font-size:.92rem; color:var(--color-text-light); margin:0; }
+
+.modality-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; }
+.modality-card{ text-align:center; }
+.modality-card h3{ font-size:1.1rem; }
+.modality-card p{ color:var(--color-text-light); font-size:.92rem; min-height:3.4em; }
+
+/* ============ FAQ ============ */
+.faq-list{ max-width:760px; margin:0 auto; display:grid; gap:14px; }
+.faq-item{
+  background:var(--color-bg); border:1px solid var(--color-border);
+  border-radius:var(--radius-sm); padding:6px 22px;
+}
+.faq-item summary{
+  padding:16px 0; font-weight:600; cursor:pointer; list-style:none;
+  position:relative; padding-right:28px;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content:'+'; position:absolute; right:0; top:14px;
+  font-size:1.3rem; color:var(--color-primary); font-weight:400;
+}
+.faq-item[open] summary::after{ content:'\2212'; }
+.faq-item p{ padding-bottom:16px; margin:0; color:var(--color-text-light); font-size:.92rem; }
+
 /* ============ Forms ============ */
 .form-card{ max-width:820px; margin:0 auto; }
 .form-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; }
@@ -313,6 +355,8 @@ textarea{ resize:vertical; }
   .hero-blob{ width:220px; height:220px; }
   .cards-grid.three{ grid-template-columns:1fr 1fr; }
   .footer-inner{ grid-template-columns:1fr 1fr; }
+  .process-steps{ grid-template-columns:1fr 1fr; }
+  .modality-grid{ grid-template-columns:1fr; }
 }
 
 @media (max-width: 760px){
@@ -328,6 +372,7 @@ textarea{ resize:vertical; }
   .nav-toggle{ display:flex; }
 
   .cards-grid.three{ grid-template-columns:1fr; }
+  .process-steps{ grid-template-columns:1fr; }
   .form-grid{ grid-template-columns:1fr; }
   .checkbox-grid{ grid-template-columns:1fr 1fr; }
   .credentials{ grid-template-columns:1fr 1fr; }
