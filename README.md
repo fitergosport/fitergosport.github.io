@@ -31,14 +31,15 @@ Pasos:
 
 Mientras el `FORM_ID_COTIZACION` no se reemplace, el sitio funciona igual pero mostrará un aviso pidiendo contactar por WhatsApp en vez de enviar el formulario.
 
-## 2. Publicar gratis en GitHub Pages
+## 2. Publicado gratis en GitHub Pages
 
-1. Crea (o usa) un repositorio en tu cuenta de GitHub, por ejemplo `fitergosport-web`.
-2. Sube el contenido de esta carpeta a ese repositorio (rama `main`).
-3. En GitHub, entra a **Settings → Pages**.
-4. En "Build and deployment" selecciona **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-5. Guarda. GitHub te dará una URL del tipo `https://TU-USUARIO.github.io/fitergosport-web/`.
-6. (Opcional) Si más adelante compran un dominio propio (ej. `fitergosport.cl`), se puede conectar en la misma sección "Pages" agregando un dominio personalizado — sigue siendo gratis, solo se paga el dominio.
+El sitio vive en el repositorio `fitergosport/fitergosport.github.io` (cuenta dedicada de la empresa). Al llamarse exactamente `<usuario>.github.io`, GitHub lo publica automáticamente en la URL raíz, sin subcarpeta:
+
+**https://fitergosport.github.io/**
+
+Cualquier `git push` a la rama `main` se refleja ahí en 1-2 minutos, sin pasos manuales adicionales.
+
+(Opcional) Si más adelante compran un dominio propio (ej. `fitergosport.cl`), se puede conectar en **Settings → Pages → Custom domain** de ese mismo repositorio — sigue siendo gratis, solo se paga el dominio.
 
 ## 3. Qué falta para la fase 2 (panel admin, blog dinámico, pagos)
 
