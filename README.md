@@ -19,7 +19,7 @@ Los formularios de **Cotización** y **Contacto** están conectados a [Formspree
 
 Pasos:
 
-1. Entra a https://formspree.io y crea una cuenta gratis con `klgo.felipemartinez@gmail.com`.
+1. Entra a https://formspree.io y crea una cuenta gratis con `fitergosport@gmail.com`.
 2. Crea un formulario nuevo ("New Form") y confirma el correo que te llegará a esa casilla.
 3. Formspree te entrega un ID parecido a `mzbqwxyz`. Copia la URL completa: `https://formspree.io/f/mzbqwxyz`.
 4. En `index.html`, reemplaza **las dos** apariciones de:
